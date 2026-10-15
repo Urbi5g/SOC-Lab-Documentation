@@ -1,0 +1,22 @@
+----
+time->Wed Aug 26 04:37:08 2026
+type=PROCTITLE msg=audit(1787733428.267:46250): proctitle=63726F6E746162002D
+type=PATH msg=audit(1787733428.267:46250): item=1 name="crontabs/tmp.XCbRwe" inode=2099492 dev=08:01 mode=0100600 ouid=1000 ogid=997 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1787733428.267:46250): item=0 name="crontabs/" inode=2097469 dev=08:01 mode=041730 ouid=0 ogid=997 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1787733428.267:46250): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1787733428.267:46250): arch=c000003e syscall=257 success=yes exit=3 a0=ffffffffffffff9c a1=55b733acb660 a2=c2 a3=180 items=2 ppid=91256 pid=99936 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=997 sgid=997 fsgid=997 tty=pts1 ses=3 comm="crontab" exe="/usr/bin/crontab" subj=unconfined key="cron_changes"
+----
+time->Wed Aug 26 04:37:08 2026
+type=PROCTITLE msg=audit(1787733428.271:46251): proctitle=63726F6E746162002D
+type=PATH msg=audit(1787733428.271:46251): item=0 name=(null) inode=2099492 dev=08:01 mode=0100600 ouid=1000 ogid=997 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1787733428.271:46251): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1787733428.271:46251): arch=c000003e syscall=91 success=yes exit=0 a0=3 a1=180 a2=0 a3=0 items=1 ppid=91256 pid=99936 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=997 sgid=997 fsgid=997 tty=pts1 ses=3 comm="crontab" exe="/usr/bin/crontab" subj=unconfined key="cron_changes"
+----
+time->Wed Aug 26 04:37:08 2026
+type=PROCTITLE msg=audit(1787733428.271:46252): proctitle=63726F6E746162002D
+type=PATH msg=audit(1787733428.271:46252): item=3 name="crontabs/kali" inode=2099492 dev=08:01 mode=0100600 ouid=1000 ogid=997 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1787733428.271:46252): item=2 name="crontabs/tmp.XCbRwe" inode=2099492 dev=08:01 mode=0100600 ouid=1000 ogid=997 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1787733428.271:46252): item=1 name="crontabs/" inode=2097469 dev=08:01 mode=041730 ouid=0 ogid=997 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PATH msg=audit(1787733428.271:46252): item=0 name="crontabs/" inode=2097469 dev=08:01 mode=041730 ouid=0 ogid=997 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=CWD msg=audit(1787733428.271:46252): cwd="/var/spool/cron"
+type=SYSCALL msg=audit(1787733428.271:46252): arch=c000003e syscall=82 success=yes exit=0 a0=55b733acb660 a1=7ffe0bcad240 a2=0 a3=0 items=4 ppid=91256 pid=99936 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=997 sgid=997 fsgid=997 tty=pts1 ses=3 comm="crontab" exe="/usr/bin/crontab" subj=unconfined key="cron_changes"

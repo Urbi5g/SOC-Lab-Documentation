@@ -1,0 +1,1 @@
+*/5 * * * * /home/kali/dummy_check.sh

@@ -1,0 +1,23 @@
+2026-08-26T02:47:02.248159-04:00 kali sshd-session[41312]: Failed password for kali from 192.168.127.130 port 44122 ssh2
+2026-08-26T02:47:09.921243-04:00 kali sshd-session[41312]: Accepted password for kali from 192.168.127.130 port 44122 ssh2
+2026-08-26T03:12:26.575681-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:32.369872-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:46.504654-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:57.238359-04:00 kali sshd-session[56097]: Accepted password for kali from 192.168.127.130 port 46768 ssh2
+2026-08-26T04:24:42.328055-04:00 kali sshd-session[91815]: Accepted password for kali from 192.168.127.128 port 42864 ssh2
+2026-08-26T04:27:21.440352-04:00 kali sshd-session[93407]: Failed password for kali from 192.168.127.128 port 35160 ssh2
+2026-08-26T04:27:27.366885-04:00 kali sshd-session[93407]: Accepted password for kali from 192.168.127.128 port 35160 ssh2
+2026-08-26T04:28:34.770388-04:00 kali sshd-session[93967]: Accepted password for kali from 192.168.127.128 port 52656 ssh2
+2026-08-26T04:29:20.871524-04:00 kali sshd-session[94727]: Accepted password for kali from 192.168.127.128 port 53326 ssh2
+2026-08-26T04:29:32.790545-04:00 kali sshd-session[94953]: Accepted password for kali from 192.168.127.128 port 57518 ssh2
+2026-08-26T04:29:42.727618-04:00 kali sshd-session[95182]: Accepted password for kali from 192.168.127.128 port 59220 ssh2
+2026-08-26T04:29:51.786223-04:00 kali sshd-session[95377]: Accepted password for kali from 192.168.127.128 port 46276 ssh2
+2026-08-26T04:30:01.836431-04:00 kali sshd-session[95608]: Accepted password for kali from 192.168.127.128 port 35872 ssh2
+2026-08-26T04:30:12.182983-04:00 kali sshd-session[95824]: Accepted password for kali from 192.168.127.128 port 56940 ssh2
+2026-08-26T04:30:42.651613-04:00 kali sshd-session[96205]: Accepted password for kali from 192.168.127.128 port 43494 ssh2
+2026-08-26T04:31:07.382796-04:00 kali sshd-session[96578]: Accepted password for kali from 192.168.127.128 port 45128 ssh2
+2026-08-26T04:32:23.459042-04:00 kali sshd-session[97387]: Accepted password for kali from 192.168.127.128 port 52870 ssh2
+2026-08-26T04:33:23.488805-04:00 kali sshd-session[97858]: Accepted password for kali from 192.168.127.129 port 49718 ssh2
+2026-08-26T04:34:42.277441-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep 'Accepted password' /var/log/auth.log
+2026-08-26T04:51:32.953959-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep -E 'Failed password|Accepted password' /var/log/auth.log
+2026-08-26T04:52:00.959766-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep -E 'Failed password|Accepted password' /var/log/auth.log

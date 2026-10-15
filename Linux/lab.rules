@@ -1,0 +1,5 @@
+-w /etc/passwd -p wa -k passwd_changes
+-w /etc/shadow -p wa -k shadow_changes
+-a always,exit -F arch=b64 -S execve -k process_exec
+-w /var/spool/cron/crontabs -p wa -k cron_changes
+-w /home -p wa -k home_file_changes

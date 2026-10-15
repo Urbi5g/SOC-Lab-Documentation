@@ -1,0 +1,460 @@
+2026-08-26T01:55:01.310126-04:00 kali CRON[11929]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T01:55:01.316164-04:00 kali CRON[11929]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:05:01.336892-04:00 kali CRON[16963]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:05:01.343963-04:00 kali CRON[16963]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:08:45.483567-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/dpkg -i ./splunkforwarder-10.4.2-33c3bf42cd73-linux-amd64.deb.1
+2026-08-26T02:08:45.486570-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:08:47.122656-04:00 kali groupadd[18894]: group added to /etc/group: name=splunkfwd, GID=1001
+2026-08-26T02:08:47.124050-04:00 kali groupadd[18894]: group added to /etc/gshadow: name=splunkfwd
+2026-08-26T02:08:47.125079-04:00 kali groupadd[18894]: new group: name=splunkfwd, GID=1001
+2026-08-26T02:08:47.147451-04:00 kali useradd[18899]: new user: name=splunkfwd, UID=1001, GID=1001, home=/opt/splunkforwarder, shell=/bin/bash, from=/dev/pts/1
+2026-08-26T02:08:50.055022-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:08:56.074547-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk start --accept-license --answer-yes
+2026-08-26T02:08:56.076345-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:09:01.358214-04:00 kali CRON[19122]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:09:01.362633-04:00 kali CRON[19122]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:09:46.831852-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:10:00.424122-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk start --accept-license --answer-yes
+2026-08-26T02:10:00.429125-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:10:00.868697-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:10:23.232195-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add forward-server 192.168.127.130:9997
+2026-08-26T02:10:23.232716-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:10:57.249939-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:12:20.464595-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list forward-server
+2026-08-26T02:12:20.466880-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:12:33.141950-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:12:52.937555-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add forward-server 192.168.127.130:9997
+2026-08-26T02:12:52.939272-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:12:53.493029-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:13:14.011210-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list forward-server
+2026-08-26T02:13:14.013825-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:13:14.576347-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:14:02.415840-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add monitor /var/log/auth.log -index main -sourcetype linux_secure
+2026-08-26T02:14:02.421154-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:14:03.010704-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:14:12.340774-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add monitor /var/log/syslog -index main -sourcetype syslog
+2026-08-26T02:14:12.343242-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:14:12.902994-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:14:22.204808-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk restart
+2026-08-26T02:14:22.210132-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:14:48.821959-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:14:50.845498-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list monitor
+2026-08-26T02:14:50.846111-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:15:01.377371-04:00 kali CRON[23285]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:15:01.384674-04:00 kali CRON[23285]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:15:19.194946-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:15:21.660533-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list monitor
+2026-08-26T02:15:21.661092-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:15:36.821498-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:17:01.400398-04:00 kali CRON[24428]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:17:01.413041-04:00 kali CRON[24428]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:25:01.441133-04:00 kali CRON[28276]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:25:01.453528-04:00 kali CRON[28276]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:25:08.484920-04:00 kali xfce4-screensaver-dialog: gkr-pam: unlocked login keyring
+2026-08-26T02:25:08.486517-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:account): setuid failed: Operation not permitted
+2026-08-26T02:25:18.150159-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list forward-server
+2026-08-26T02:25:18.151333-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:25:18.821593-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:25:46.926890-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list monitor
+2026-08-26T02:25:46.928509-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:25:47.987724-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:26:01.460224-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add monitor /var/log/syslog -index main -sourcetype syslog
+2026-08-26T02:26:01.460871-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:26:02.053636-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:26:43.806752-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 20 /var/log/syslog
+2026-08-26T02:26:43.807281-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:26:43.814662-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:32:58.113679-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl status auditd --no-pager
+2026-08-26T02:32:58.119221-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:32:58.154406-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:35:01.470358-04:00 kali CRON[34009]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:35:01.486906-04:00 kali CRON[34009]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:38:14.170212-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/dpkg -i ./libaudit1.deb ./libauparse0t64.deb ./libauplugin1.deb ./auditd-kali.deb
+2026-08-26T02:38:14.176818-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:38:23.068668-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:38:31.796195-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl enable --now auditd
+2026-08-26T02:38:31.801069-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:38:32.210294-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:38:41.770644-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl status auditd --no-pager
+2026-08-26T02:38:41.775241-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:38:55.494341-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:39:01.538932-04:00 kali CRON[36530]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:39:01.550757-04:00 kali CRON[36530]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:39:12.549966-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nano /etc/audit/rules.d/lab.rules
+2026-08-26T02:39:12.557169-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:39:22.568336-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:39:33.316633-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/augenrules --load
+2026-08-26T02:39:33.322890-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:39:33.412061-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:39:44.193152-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+2026-08-26T02:39:44.196054-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:39:44.203805-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:39:54.426811-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk add monitor /var/log/audit/audit.log -index main -sourcetype linux:audit
+2026-08-26T02:39:54.430056-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:39:55.534464-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:40:00.927906-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk restart
+2026-08-26T02:40:00.943384-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:40:09.584432-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:40:11.246094-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list monitor
+2026-08-26T02:40:11.248435-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:40:23.908871-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:41:03.664173-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/auditctl -l
+2026-08-26T02:41:03.667828-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:41:03.669125-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:41:20.968072-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/ausearch -k process_exec -ts recent
+2026-08-26T02:41:20.970220-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:41:20.987736-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:41:40.413897-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/ausearch -k process_exec -ts recent
+2026-08-26T02:41:40.424159-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:41:40.446708-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:42:06.223857-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/ausearch -k process_exec -ts recent
+2026-08-26T02:42:06.225753-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:42:06.256131-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:42:15.312539-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/ls -lh /var/log/audit/audit.log
+2026-08-26T02:42:15.315620-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:42:15.320899-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:45:01.566362-04:00 kali CRON[40243]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:45:01.577602-04:00 kali CRON[40243]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:45:42.958667-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+2026-08-26T02:45:42.964622-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:45:46.047734-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:46:06.059112-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl enable --now ssh
+2026-08-26T02:46:06.060511-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:46:06.803741-04:00 kali sshd[40922]: Server listening on 0.0.0.0 port 22.
+2026-08-26T02:46:06.805448-04:00 kali sshd[40922]: Server listening on :: port 22.
+2026-08-26T02:46:06.808388-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:46:14.535012-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+2026-08-26T02:46:14.535887-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:46:15.530194-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:46:31.251345-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/ss -lntp
+2026-08-26T02:46:31.253958-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:46:31.525885-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:47:00.532140-04:00 kali unix_chkpwd[41434]: password check failed for user (kali)
+2026-08-26T02:47:00.533044-04:00 kali sshd-session[41312]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.127.130  user=kali
+2026-08-26T02:47:02.248159-04:00 kali sshd-session[41312]: Failed password for kali from 192.168.127.130 port 44122 ssh2
+2026-08-26T02:47:09.921243-04:00 kali sshd-session[41312]: Accepted password for kali from 192.168.127.130 port 44122 ssh2
+2026-08-26T02:47:09.957399-04:00 kali sshd-session[41312]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T02:47:09.991387-04:00 kali systemd-logind[580]: New session '16' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T02:47:32.707235-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 30 /var/log/auth.log
+2026-08-26T02:47:32.710906-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:47:32.723026-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:55:01.617013-04:00 kali CRON[46202]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T02:55:01.625376-04:00 kali CRON[46202]: pam_unix(cron:session): session closed for user root
+2026-08-26T02:55:11.923407-04:00 kali sshd-session[41312]: syslogin_perform_logout: logout() returned an error
+2026-08-26T02:55:11.933043-04:00 kali sshd-session[41513]: Received disconnect from 192.168.127.130 port 44122:11: disconnected by user
+2026-08-26T02:55:11.934741-04:00 kali sshd-session[41513]: Disconnected from user kali 192.168.127.130 port 44122
+2026-08-26T02:55:11.939599-04:00 kali sshd-session[41312]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T02:55:11.954254-04:00 kali systemd-logind[580]: Session 16 logged out. Waiting for processes to exit.
+2026-08-26T02:55:11.960249-04:00 kali systemd-logind[580]: Removed session 16.
+2026-08-26T02:55:47.455021-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nano /etc/ssh/sshd_config
+2026-08-26T02:55:47.457780-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:58:07.288787-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:58:30.240384-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nano /etc/ssh/sshd_config
+2026-08-26T02:58:30.241117-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:58:49.985795-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:59:00.938617-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/sshd -t
+2026-08-26T02:59:00.941448-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:59:00.983548-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:59:37.202651-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2026-08-26T02:59:37.203810-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:59:37.238574-04:00 kali sshd[40922]: Received signal 15; terminating.
+2026-08-26T02:59:37.330879-04:00 kali sshd[48719]: Server listening on 0.0.0.0 port 22.
+2026-08-26T02:59:37.333255-04:00 kali sshd[48719]: Server listening on :: port 22.
+2026-08-26T02:59:37.334166-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T02:59:46.664659-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+2026-08-26T02:59:46.666374-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T02:59:49.688387-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:05:01.658458-04:00 kali CRON[51399]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:05:01.677042-04:00 kali CRON[51399]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:06:35.004515-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:auth): conversation failed
+2026-08-26T03:06:35.010401-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:auth): auth could not identify password for [kali]
+2026-08-26T03:09:01.682822-04:00 kali CRON[53622]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:09:01.688303-04:00 kali CRON[53622]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:09:06.962239-04:00 kali unix_chkpwd[53723]: password check failed for user (kali)
+2026-08-26T03:09:06.966296-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+2026-08-26T03:09:16.300204-04:00 kali unix_chkpwd[53798]: password check failed for user (kali)
+2026-08-26T03:09:16.301743-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:auth): authentication failure; logname=kali uid=1000 euid=1000 tty=:0.0 ruser= rhost=  user=kali
+2026-08-26T03:09:23.466257-04:00 kali xfce4-screensaver-dialog: gkr-pam: unlocked login keyring
+2026-08-26T03:09:23.468287-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:account): setuid failed: Operation not permitted
+2026-08-26T03:09:33.034806-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/cp /opt/splunkforwarder/etc/system/local/inputs.conf /opt/splunkforwarder/etc/system/local/inputs.conf.bak
+2026-08-26T03:09:33.043692-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:09:33.049989-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:09:56.969898-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/mkdir -p /opt/splunkforwarder/etc/system/local
+2026-08-26T03:09:56.971743-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:09:56.982808-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:10:01.706193-04:00 kali CRON[54251]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:10:01.719729-04:00 kali CRON[54251]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:10:07.900305-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/nano /opt/splunkforwarder/etc/system/local/inputs.conf
+2026-08-26T03:10:07.913064-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:10:19.774057-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:10:27.646916-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk btool inputs list --debug
+2026-08-26T03:10:27.650534-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:10:28.735292-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:10:54.626902-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk restart
+2026-08-26T03:10:54.631823-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:11:03.526753-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:11:08.160477-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/opt/splunkforwarder/bin/splunk list monitor
+2026-08-26T03:11:08.169403-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:11:23.558544-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:11:49.690457-04:00 kali sudo:     kali : TTY=pts/0 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/touch /home/kali/RESILIENT_AUDIT_TEST
+2026-08-26T03:11:49.691677-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T03:11:49.699132-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T03:12:04.713604-04:00 kali sshd-session[55708]: Connection from 192.168.127.130 port 44950 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T03:12:24.592903-04:00 kali unix_chkpwd[55870]: password check failed for user (kali)
+2026-08-26T03:12:24.593261-04:00 kali sshd-session[55708]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.127.130  user=kali
+2026-08-26T03:12:26.575681-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:30.145510-04:00 kali unix_chkpwd[55919]: password check failed for user (kali)
+2026-08-26T03:12:32.369872-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:44.363551-04:00 kali unix_chkpwd[56032]: password check failed for user (kali)
+2026-08-26T03:12:46.504654-04:00 kali sshd-session[55708]: Failed password for kali from 192.168.127.130 port 44950 ssh2
+2026-08-26T03:12:48.582938-04:00 kali sshd-session[55708]: Connection closed by authenticating user kali 192.168.127.130 port 44950 [preauth]
+2026-08-26T03:12:48.584296-04:00 kali sshd-session[55708]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.127.130  user=kali
+2026-08-26T03:12:48.592273-04:00 kali sshd[48719]: srclimit_penalise: ipv4: new 192.168.127.130/32 deferred penalty of 5.000 seconds for penalty: failed authentication
+2026-08-26T03:12:52.134074-04:00 kali sshd-session[56097]: Connection from 192.168.127.130 port 46768 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T03:12:57.238359-04:00 kali sshd-session[56097]: Accepted password for kali from 192.168.127.130 port 46768 ssh2
+2026-08-26T03:12:57.268587-04:00 kali sshd-session[56097]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T03:12:57.324772-04:00 kali systemd-logind[580]: New session '21' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T03:12:57.366155-04:00 kali sshd-session[56097]: User child is on pid 56145
+2026-08-26T03:12:57.468240-04:00 kali sshd-session[56145]: Starting session: shell on pts/1 for kali from 192.168.127.130 port 46768 id 0
+2026-08-26T03:15:01.730064-04:00 kali CRON[57214]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:15:01.738861-04:00 kali CRON[57214]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:17:01.758130-04:00 kali CRON[58287]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:17:01.766481-04:00 kali CRON[58287]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:17:53.870300-04:00 kali sshd-session[56097]: syslogin_perform_logout: logout() returned an error
+2026-08-26T03:17:53.882250-04:00 kali sshd-session[56145]: Close session: user kali from 192.168.127.130 port 46768 id 0
+2026-08-26T03:17:53.888708-04:00 kali sshd-session[56145]: Received disconnect from 192.168.127.130 port 46768:11: disconnected by user
+2026-08-26T03:17:53.889530-04:00 kali sshd-session[56145]: Disconnected from user kali 192.168.127.130 port 46768
+2026-08-26T03:17:53.893689-04:00 kali sshd-session[56097]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T03:17:53.905797-04:00 kali systemd-logind[580]: Session 21 logged out. Waiting for processes to exit.
+2026-08-26T03:17:53.910061-04:00 kali systemd-logind[580]: Removed session 21.
+2026-08-26T03:19:17.761388-04:00 kali xfce4-screensaver-dialog: gkr-pam: unlocked login keyring
+2026-08-26T03:19:17.764348-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:account): setuid failed: Operation not permitted
+2026-08-26T03:25:01.780798-04:00 kali CRON[62547]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:25:01.789170-04:00 kali CRON[62547]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:35:01.808203-04:00 kali CRON[67432]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:35:01.818000-04:00 kali CRON[67432]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:39:01.839928-04:00 kali CRON[69370]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:39:01.848785-04:00 kali CRON[69370]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:45:01.865161-04:00 kali CRON[72330]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:45:01.884647-04:00 kali CRON[72330]: pam_unix(cron:session): session closed for user root
+2026-08-26T03:55:01.906313-04:00 kali CRON[77250]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T03:55:01.930028-04:00 kali CRON[77250]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:05:01.949480-04:00 kali CRON[82110]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:05:01.964894-04:00 kali CRON[82110]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:09:01.974361-04:00 kali CRON[84047]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:09:01.978953-04:00 kali CRON[84047]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:15:01.987575-04:00 kali CRON[87008]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:15:01.993396-04:00 kali CRON[87008]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:17:02.005607-04:00 kali CRON[87988]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:17:02.013805-04:00 kali CRON[87988]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:23:19.833489-04:00 kali xfce4-screensaver-dialog: gkr-pam: unlocked login keyring
+2026-08-26T04:23:19.841319-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:account): setuid failed: Operation not permitted
+2026-08-26T04:24:19.228015-04:00 kali sshd-session[91815]: Connection from 192.168.127.128 port 42864 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:24:42.328055-04:00 kali sshd-session[91815]: Accepted password for kali from 192.168.127.128 port 42864 ssh2
+2026-08-26T04:24:42.360943-04:00 kali sshd-session[91815]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:24:42.442430-04:00 kali systemd-logind[580]: New session '33' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:24:42.490339-04:00 kali sshd-session[91815]: User child is on pid 92025
+2026-08-26T04:24:42.622606-04:00 kali sshd-session[92025]: Starting session: shell on pts/2 for kali from 192.168.127.128 port 42864 id 0
+2026-08-26T04:25:01.024831-04:00 kali CRON[92239]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:25:01.032737-04:00 kali CRON[92239]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:25:23.672918-04:00 kali sudo:     kali : TTY=pts/2 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/tail -n 20 /var/log/auth.log
+2026-08-26T04:25:23.680959-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:25:23.688542-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:25:51.481039-04:00 kali sshd-session[92025]: Close session: user kali from 192.168.127.128 port 42864 id 0
+2026-08-26T04:25:51.485812-04:00 kali sshd-session[91815]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:25:51.493364-04:00 kali sshd-session[92025]: Received disconnect from 192.168.127.128 port 42864:11: disconnected by user
+2026-08-26T04:25:51.495291-04:00 kali sshd-session[92025]: Disconnected from user kali 192.168.127.128 port 42864
+2026-08-26T04:25:51.496480-04:00 kali sshd-session[91815]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:25:51.509225-04:00 kali systemd-logind[580]: Session 33 logged out. Waiting for processes to exit.
+2026-08-26T04:25:51.516149-04:00 kali systemd-logind[580]: Removed session 33.
+2026-08-26T04:27:10.744414-04:00 kali sshd-session[93407]: Connection from 192.168.127.128 port 35160 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:27:19.295327-04:00 kali unix_chkpwd[93500]: password check failed for user (kali)
+2026-08-26T04:27:19.300839-04:00 kali sshd-session[93407]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.127.128  user=kali
+2026-08-26T04:27:21.440352-04:00 kali sshd-session[93407]: Failed password for kali from 192.168.127.128 port 35160 ssh2
+2026-08-26T04:27:27.366885-04:00 kali sshd-session[93407]: Accepted password for kali from 192.168.127.128 port 35160 ssh2
+2026-08-26T04:27:27.392281-04:00 kali sshd-session[93407]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:27:27.399825-04:00 kali systemd-logind[580]: New session '35' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:27:27.430794-04:00 kali sshd-session[93407]: User child is on pid 93581
+2026-08-26T04:27:27.437630-04:00 kali sshd-session[93581]: Starting session: shell on pts/2 for kali from 192.168.127.128 port 35160 id 0
+2026-08-26T04:28:05.826021-04:00 kali sshd-session[93967]: Connection from 192.168.127.128 port 52656 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:28:34.770388-04:00 kali sshd-session[93967]: Accepted password for kali from 192.168.127.128 port 52656 ssh2
+2026-08-26T04:28:34.782687-04:00 kali sshd-session[93967]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:28:34.789187-04:00 kali systemd-logind[580]: New session '36' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:28:34.838844-04:00 kali sshd-session[93967]: User child is on pid 94238
+2026-08-26T04:28:34.850184-04:00 kali sshd-session[94238]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 52656 id 0
+2026-08-26T04:29:13.771571-04:00 kali sshd-session[93967]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:29:13.774431-04:00 kali sshd-session[94238]: Received disconnect from 192.168.127.128 port 52656:11: disconnected by user
+2026-08-26T04:29:13.776977-04:00 kali sshd-session[94238]: Disconnected from user kali 192.168.127.128 port 52656
+2026-08-26T04:29:13.778431-04:00 kali sshd-session[93967]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:29:13.783384-04:00 kali systemd-logind[580]: Session 36 logged out. Waiting for processes to exit.
+2026-08-26T04:29:13.791130-04:00 kali systemd-logind[580]: Removed session 36.
+2026-08-26T04:29:17.627341-04:00 kali sshd-session[94727]: Connection from 192.168.127.128 port 53326 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:29:20.871524-04:00 kali sshd-session[94727]: Accepted password for kali from 192.168.127.128 port 53326 ssh2
+2026-08-26T04:29:20.884632-04:00 kali sshd-session[94727]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:29:20.891222-04:00 kali systemd-logind[580]: New session '37' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:29:20.945416-04:00 kali sshd-session[94727]: User child is on pid 94768
+2026-08-26T04:29:20.954030-04:00 kali sshd-session[94768]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 53326 id 0
+2026-08-26T04:29:24.468175-04:00 kali sshd-session[94727]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:29:24.472764-04:00 kali sshd-session[94768]: Received disconnect from 192.168.127.128 port 53326:11: disconnected by user
+2026-08-26T04:29:24.474738-04:00 kali sshd-session[94768]: Disconnected from user kali 192.168.127.128 port 53326
+2026-08-26T04:29:24.477454-04:00 kali sshd-session[94727]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:29:24.487305-04:00 kali systemd-logind[580]: Session 37 logged out. Waiting for processes to exit.
+2026-08-26T04:29:24.490796-04:00 kali systemd-logind[580]: Removed session 37.
+2026-08-26T04:29:29.046943-04:00 kali sshd-session[94953]: Connection from 192.168.127.128 port 57518 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:29:32.790545-04:00 kali sshd-session[94953]: Accepted password for kali from 192.168.127.128 port 57518 ssh2
+2026-08-26T04:29:32.802281-04:00 kali sshd-session[94953]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:29:32.807903-04:00 kali systemd-logind[580]: New session '38' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:29:32.836899-04:00 kali sshd-session[94953]: User child is on pid 95004
+2026-08-26T04:29:32.844177-04:00 kali sshd-session[95004]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 57518 id 0
+2026-08-26T04:29:35.628984-04:00 kali sshd-session[94953]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:29:35.634029-04:00 kali sshd-session[95004]: Received disconnect from 192.168.127.128 port 57518:11: disconnected by user
+2026-08-26T04:29:35.636863-04:00 kali sshd-session[95004]: Disconnected from user kali 192.168.127.128 port 57518
+2026-08-26T04:29:35.641795-04:00 kali sshd-session[94953]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:29:35.655823-04:00 kali systemd-logind[580]: Session 38 logged out. Waiting for processes to exit.
+2026-08-26T04:29:35.657887-04:00 kali systemd-logind[580]: Removed session 38.
+2026-08-26T04:29:39.952902-04:00 kali sshd-session[95182]: Connection from 192.168.127.128 port 59220 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:29:42.727618-04:00 kali sshd-session[95182]: Accepted password for kali from 192.168.127.128 port 59220 ssh2
+2026-08-26T04:29:42.743213-04:00 kali sshd-session[95182]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:29:42.750518-04:00 kali systemd-logind[580]: New session '39' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:29:42.786252-04:00 kali sshd-session[95182]: User child is on pid 95220
+2026-08-26T04:29:42.795979-04:00 kali sshd-session[95220]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 59220 id 0
+2026-08-26T04:29:45.339602-04:00 kali sshd-session[95182]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:29:45.348123-04:00 kali sshd-session[95220]: Received disconnect from 192.168.127.128 port 59220:11: disconnected by user
+2026-08-26T04:29:45.350088-04:00 kali sshd-session[95220]: Disconnected from user kali 192.168.127.128 port 59220
+2026-08-26T04:29:45.353120-04:00 kali sshd-session[95182]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:29:45.355653-04:00 kali systemd-logind[580]: Session 39 logged out. Waiting for processes to exit.
+2026-08-26T04:29:45.357362-04:00 kali systemd-logind[580]: Removed session 39.
+2026-08-26T04:29:48.111537-04:00 kali sshd-session[95377]: Connection from 192.168.127.128 port 46276 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:29:51.786223-04:00 kali sshd-session[95377]: Accepted password for kali from 192.168.127.128 port 46276 ssh2
+2026-08-26T04:29:51.803776-04:00 kali sshd-session[95377]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:29:51.813697-04:00 kali systemd-logind[580]: New session '40' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:29:51.854981-04:00 kali sshd-session[95377]: User child is on pid 95428
+2026-08-26T04:29:51.864393-04:00 kali sshd-session[95428]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 46276 id 0
+2026-08-26T04:29:55.225808-04:00 kali sshd-session[95428]: Close session: user kali from 192.168.127.128 port 46276 id 0
+2026-08-26T04:29:55.227052-04:00 kali sshd-session[95377]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:29:55.229717-04:00 kali sshd-session[95428]: Received disconnect from 192.168.127.128 port 46276:11: disconnected by user
+2026-08-26T04:29:55.230585-04:00 kali sshd-session[95428]: Disconnected from user kali 192.168.127.128 port 46276
+2026-08-26T04:29:55.235278-04:00 kali sshd-session[95377]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:29:55.243787-04:00 kali systemd-logind[580]: Session 40 logged out. Waiting for processes to exit.
+2026-08-26T04:29:55.246347-04:00 kali systemd-logind[580]: Removed session 40.
+2026-08-26T04:29:59.019513-04:00 kali sshd-session[95608]: Connection from 192.168.127.128 port 35872 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:30:01.836431-04:00 kali sshd-session[95608]: Accepted password for kali from 192.168.127.128 port 35872 ssh2
+2026-08-26T04:30:01.856901-04:00 kali sshd-session[95608]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:30:01.866521-04:00 kali systemd-logind[580]: New session '41' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:30:01.912970-04:00 kali sshd-session[95608]: User child is on pid 95646
+2026-08-26T04:30:01.926400-04:00 kali sshd-session[95646]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 35872 id 0
+2026-08-26T04:30:06.602798-04:00 kali sshd-session[95608]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:30:06.606215-04:00 kali sshd-session[95646]: Close session: user kali from 192.168.127.128 port 35872 id 0
+2026-08-26T04:30:06.611924-04:00 kali sshd-session[95646]: Received disconnect from 192.168.127.128 port 35872:11: disconnected by user
+2026-08-26T04:30:06.613272-04:00 kali sshd-session[95646]: Disconnected from user kali 192.168.127.128 port 35872
+2026-08-26T04:30:06.618646-04:00 kali sshd-session[95608]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:30:06.619952-04:00 kali systemd-logind[580]: Session 41 logged out. Waiting for processes to exit.
+2026-08-26T04:30:06.620926-04:00 kali systemd-logind[580]: Removed session 41.
+2026-08-26T04:30:09.306043-04:00 kali sshd-session[95824]: Connection from 192.168.127.128 port 56940 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:30:12.182983-04:00 kali sshd-session[95824]: Accepted password for kali from 192.168.127.128 port 56940 ssh2
+2026-08-26T04:30:12.195880-04:00 kali sshd-session[95824]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:30:12.202400-04:00 kali systemd-logind[580]: New session '42' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:30:12.245011-04:00 kali sshd-session[95824]: User child is on pid 95863
+2026-08-26T04:30:12.254592-04:00 kali sshd-session[95863]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 56940 id 0
+2026-08-26T04:30:17.807244-04:00 kali sshd-session[95824]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:30:17.811848-04:00 kali sshd-session[95863]: Close session: user kali from 192.168.127.128 port 56940 id 0
+2026-08-26T04:30:17.814092-04:00 kali sshd-session[95863]: Received disconnect from 192.168.127.128 port 56940:11: disconnected by user
+2026-08-26T04:30:17.818545-04:00 kali sshd-session[95863]: Disconnected from user kali 192.168.127.128 port 56940
+2026-08-26T04:30:17.820192-04:00 kali sshd-session[95824]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:30:17.827149-04:00 kali systemd-logind[580]: Session 42 logged out. Waiting for processes to exit.
+2026-08-26T04:30:17.830646-04:00 kali systemd-logind[580]: Removed session 42.
+2026-08-26T04:30:38.693180-04:00 kali sshd-session[96205]: Connection from 192.168.127.128 port 43494 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:30:42.651613-04:00 kali sshd-session[96205]: Accepted password for kali from 192.168.127.128 port 43494 ssh2
+2026-08-26T04:30:42.662863-04:00 kali sshd-session[96205]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:30:42.671097-04:00 kali systemd-logind[580]: New session '43' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:30:42.696798-04:00 kali sshd-session[96205]: User child is on pid 96256
+2026-08-26T04:30:42.704821-04:00 kali sshd-session[96256]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 43494 id 0
+2026-08-26T04:31:02.399835-04:00 kali sshd-session[96205]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:31:02.403200-04:00 kali sshd-session[96256]: Close session: user kali from 192.168.127.128 port 43494 id 0
+2026-08-26T04:31:02.405276-04:00 kali sshd-session[96256]: Received disconnect from 192.168.127.128 port 43494:11: disconnected by user
+2026-08-26T04:31:02.406197-04:00 kali sshd-session[96256]: Disconnected from user kali 192.168.127.128 port 43494
+2026-08-26T04:31:02.407136-04:00 kali sshd-session[96205]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:31:02.409855-04:00 kali systemd-logind[580]: Session 43 logged out. Waiting for processes to exit.
+2026-08-26T04:31:02.412236-04:00 kali systemd-logind[580]: Removed session 43.
+2026-08-26T04:31:04.837249-04:00 kali sshd-session[96578]: Connection from 192.168.127.128 port 45128 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:31:07.382796-04:00 kali sshd-session[96578]: Accepted password for kali from 192.168.127.128 port 45128 ssh2
+2026-08-26T04:31:07.399249-04:00 kali sshd-session[96578]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:31:07.405369-04:00 kali systemd-logind[580]: New session '44' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:31:07.437790-04:00 kali sshd-session[96578]: User child is on pid 96609
+2026-08-26T04:31:07.447099-04:00 kali sshd-session[96609]: Starting session: shell on pts/3 for kali from 192.168.127.128 port 45128 id 0
+2026-08-26T04:32:12.726597-04:00 kali sshd-session[96609]: Close session: user kali from 192.168.127.128 port 45128 id 0
+2026-08-26T04:32:12.729585-04:00 kali sshd-session[96578]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:32:12.734897-04:00 kali sshd-session[96609]: Received disconnect from 192.168.127.128 port 45128:11: disconnected by user
+2026-08-26T04:32:12.736166-04:00 kali sshd-session[96609]: Disconnected from user kali 192.168.127.128 port 45128
+2026-08-26T04:32:12.736928-04:00 kali sshd-session[96578]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:32:12.743477-04:00 kali systemd-logind[580]: Session 44 logged out. Waiting for processes to exit.
+2026-08-26T04:32:12.746440-04:00 kali systemd-logind[580]: Removed session 44.
+2026-08-26T04:32:16.090806-04:00 kali sshd-session[93407]: syslogin_perform_logout: logout() returned an error
+2026-08-26T04:32:16.095492-04:00 kali sshd-session[93581]: Close session: user kali from 192.168.127.128 port 35160 id 0
+2026-08-26T04:32:16.097261-04:00 kali sshd-session[93581]: Received disconnect from 192.168.127.128 port 35160:11: disconnected by user
+2026-08-26T04:32:16.098514-04:00 kali sshd-session[93581]: Disconnected from user kali 192.168.127.128 port 35160
+2026-08-26T04:32:16.099845-04:00 kali sshd-session[93407]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:32:16.104474-04:00 kali systemd-logind[580]: Session 35 logged out. Waiting for processes to exit.
+2026-08-26T04:32:16.105286-04:00 kali systemd-logind[580]: Removed session 35.
+2026-08-26T04:32:19.615054-04:00 kali sshd-session[97387]: Connection from 192.168.127.128 port 52870 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:32:23.459042-04:00 kali sshd-session[97387]: Accepted password for kali from 192.168.127.128 port 52870 ssh2
+2026-08-26T04:32:23.469737-04:00 kali sshd-session[97387]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:32:23.476838-04:00 kali systemd-logind[580]: New session '45' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:32:23.502832-04:00 kali sshd-session[97387]: User child is on pid 97445
+2026-08-26T04:32:23.507611-04:00 kali sshd-session[97445]: Starting session: command for kali from 192.168.127.128 port 52870 id 0
+2026-08-26T04:32:23.530818-04:00 kali sshd-session[97445]: Received disconnect from 192.168.127.128 port 52870:11: disconnected by user
+2026-08-26T04:32:23.532611-04:00 kali sshd-session[97445]: Disconnected from user kali 192.168.127.128 port 52870
+2026-08-26T04:32:23.533313-04:00 kali sshd-session[97387]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:32:23.541513-04:00 kali systemd-logind[580]: Session 45 logged out. Waiting for processes to exit.
+2026-08-26T04:32:23.542225-04:00 kali systemd-logind[580]: Removed session 45.
+2026-08-26T04:33:12.247998-04:00 kali sshd-session[97858]: Connection from 192.168.127.129 port 49718 on 192.168.127.128 port 22 rdomain ""
+2026-08-26T04:33:23.488805-04:00 kali sshd-session[97858]: Accepted password for kali from 192.168.127.129 port 49718 ssh2
+2026-08-26T04:33:23.507123-04:00 kali sshd-session[97858]: pam_unix(sshd:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:33:23.513972-04:00 kali systemd-logind[580]: New session '46' of user 'kali' with class 'user' and type 'tty'.
+2026-08-26T04:33:23.545311-04:00 kali sshd-session[97858]: User child is on pid 97954
+2026-08-26T04:33:23.558609-04:00 kali sshd-session[97954]: Starting session: command for kali from 192.168.127.129 port 49718 id 0
+2026-08-26T04:33:23.576992-04:00 kali sshd-session[97954]: Close session: user kali from 192.168.127.129 port 49718 id 0
+2026-08-26T04:33:23.578389-04:00 kali sshd-session[97954]: Received disconnect from 192.168.127.129 port 49718:11: disconnected by user
+2026-08-26T04:33:23.579104-04:00 kali sshd-session[97954]: Disconnected from user kali 192.168.127.129 port 49718
+2026-08-26T04:33:23.580256-04:00 kali sshd-session[97858]: pam_unix(sshd:session): session closed for user kali
+2026-08-26T04:33:23.587174-04:00 kali systemd-logind[580]: Session 46 logged out. Waiting for processes to exit.
+2026-08-26T04:33:23.590518-04:00 kali systemd-logind[580]: Removed session 46.
+2026-08-26T04:34:42.277441-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep 'Accepted password' /var/log/auth.log
+2026-08-26T04:34:42.282200-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:34:42.285715-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:35:01.044031-04:00 kali CRON[98808]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:35:01.049225-04:00 kali CRON[98808]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:35:01.595975-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/ausearch -k process_exec -ts recent
+2026-08-26T04:35:01.601128-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:35:02.674777-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:37:41.834337-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/sbin/ausearch -k cron_changes -ts recent
+2026-08-26T04:37:41.836002-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:37:41.868501-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:37:51.654307-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep cron /var/log/audit/audit.log
+2026-08-26T04:37:51.659693-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:37:51.666266-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:39:01.061614-04:00 kali CRON[100952]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:39:01.069698-04:00 kali CRON[100952]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:40:01.075926-04:00 kali CRON[101493]: pam_unix(cron:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:40:01.135855-04:00 kali CRON[101493]: pam_unix(cron:session): session closed for user kali
+2026-08-26T04:45:01.149557-04:00 kali CRON[103980]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-26T04:45:01.156779-04:00 kali CRON[103981]: pam_unix(cron:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:45:01.160838-04:00 kali CRON[103980]: pam_unix(cron:session): session closed for user root
+2026-08-26T04:45:01.168798-04:00 kali CRON[103981]: pam_unix(cron:session): session closed for user kali
+2026-08-26T04:50:01.181231-04:00 kali CRON[106402]: pam_unix(cron:session): session opened for user kali(uid=1000) by kali(uid=0)
+2026-08-26T04:50:01.197106-04:00 kali CRON[106402]: pam_unix(cron:session): session closed for user kali
+2026-08-26T04:50:49.124323-04:00 kali xfce4-screensaver-dialog: gkr-pam: unlocked login keyring
+2026-08-26T04:50:49.127670-04:00 kali xfce4-screensaver-dialog: pam_unix(xfce4-screensaver:account): setuid failed: Operation not permitted
+2026-08-26T04:51:25.400711-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/cp /etc/ssh/sshd_config /home/kali/Resilient_SOC_Case_001/Linux/sshd_config
+2026-08-26T04:51:25.406864-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:51:25.439531-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:51:25.474903-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/cp /etc/audit/rules.d/lab.rules /home/kali/Resilient_SOC_Case_001/Linux/lab.rules
+2026-08-26T04:51:25.477533-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:51:25.497740-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:51:25.519598-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/cp /opt/splunkforwarder/etc/system/local/inputs.conf /home/kali/Resilient_SOC_Case_001/Linux/inputs.conf
+2026-08-26T04:51:25.522510-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:51:25.531203-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:51:32.953959-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/grep -E 'Failed password|Accepted password' /var/log/auth.log
+2026-08-26T04:51:32.963629-04:00 kali sudo: pam_unix(sudo:session): session opened for user root(uid=0) by kali(uid=1000)
+2026-08-26T04:51:32.970155-04:00 kali sudo: pam_unix(sudo:session): session closed for user root
+2026-08-26T04:51:49.723289-04:00 kali sudo:     kali : TTY=pts/1 ; PWD=/home/kali ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/kali/Resilient_SOC_Case_001/Evidence/auth.log
